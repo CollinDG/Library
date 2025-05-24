@@ -39,10 +39,10 @@ function displayLibrary() {
       row.appendChild(cell);
     }
 
-    const cell = document.createElement("td");
+    const removeCell = document.createElement("td");
     const removeBtn = document.createElement("button");
-
     removeBtn.innerText = "Remove"
+
     removeBtn.addEventListener("click", () => {
         const index = myLibrary.findIndex(b => b.id === book.id);
         if (index !== -1) {
@@ -52,8 +52,24 @@ function displayLibrary() {
 
     })
 
-    cell.appendChild(removeBtn)
-    row.appendChild(cell);
+    removeCell.appendChild(removeBtn)
+    row.appendChild(removeCell);
+
+    const toggleCell = document.createElement("td");
+    const toggleBtn = document.createElement("button");
+    toggleBtn.innerText = "Toggle"
+
+    toggleBtn.addEventListener("click", () => {
+        const index = myLibrary.findIndex(b => b.id === book.id);
+        if (index !== -1) {
+            book.read = !book.read;
+            displayLibrary();
+        }
+    })
+
+    toggleCell.appendChild(toggleBtn);
+    row.appendChild(toggleCell);
+
     tbody.appendChild(row);
   }
 }
