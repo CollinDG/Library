@@ -38,6 +38,22 @@ function displayLibrary() {
  
       row.appendChild(cell);
     }
+
+    const cell = document.createElement("td");
+    const removeBtn = document.createElement("button");
+
+    removeBtn.innerText = "Remove"
+    removeBtn.addEventListener("click", () => {
+        const index = myLibrary.findIndex(b => b.id === book.id);
+        if (index !== -1) {
+            myLibrary.splice(index, 1);
+            displayLibrary();
+        }
+
+    })
+
+    cell.appendChild(removeBtn)
+    row.appendChild(cell);
     tbody.appendChild(row);
   }
 }
