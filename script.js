@@ -55,6 +55,21 @@ cancelBtn.addEventListener("click", () => {
     bookDialog.close();
 })
 
+bookForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    const formData = new FormData(bookForm);
+    const title = formData.get("title");
+    const author = formData.get("author");
+    const pages = formData.get("pages");
+    const read = formData.get("read") === "on";
+
+    addBookToLibrary(title, author, pages, read);
+    displayLibrary();
+    bookDialog.close();
+    bookForm.reset();
+})
+
 addBookToLibrary("The Hobbit", "J.R.R. Tolkien", "295", false);
 addBookToLibrary("1984", "George Orwell", "328", true);
 addBookToLibrary("To Kill a Mockingbird", "Harper Lee", "281", true);
