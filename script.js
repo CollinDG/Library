@@ -42,7 +42,18 @@ function displayLibrary() {
   }
 }
 
-const button = document.getElementById("new-book-btn");
+const bookDialog = document.getElementById("book-dialog");
+const bookForm = document.getElementById("book-form")
+const openBtn = document.getElementById("new-book-btn");
+const cancelBtn = document.getElementById("cancel-btn");
+
+openBtn.addEventListener("click", () => {
+    bookDialog.showModal();
+})
+
+cancelBtn.addEventListener("click", () => {
+    bookDialog.close();
+})
 
 addBookToLibrary("The Hobbit", "J.R.R. Tolkien", "295", false);
 addBookToLibrary("1984", "George Orwell", "328", true);
