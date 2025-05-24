@@ -42,6 +42,8 @@ function displayLibrary() {
   }
 }
 
+const button = document.getElementById("new-book-btn");
+
 addBookToLibrary("The Hobbit", "J.R.R. Tolkien", "295", false);
 addBookToLibrary("1984", "George Orwell", "328", true);
 addBookToLibrary("To Kill a Mockingbird", "Harper Lee", "281", true);
