@@ -1,15 +1,15 @@
 const myLibrary = [];
 
-function Book(title, author, pages, read, id) {
-  if (!new.target) {
-    throw Error("Must use new keyword");
+class Book {
+  constructor(title, author, pages, read, id) {
+    this.title = title
+    this.author = author
+    this.pages = pages
+    this.read = read
+    this.id = id
   }
-  this.title = title
-  this.author = author
-  this.pages = pages
-  this.read = read
-  this.id = id
-  this.info = function() {
+  
+  info() {
     return `${this.title} by ${this.author}, ${this.pages} pages, ${this.read ? 'read' : 'not yet read'}` 
   }
 }
@@ -17,6 +17,7 @@ function Book(title, author, pages, read, id) {
 function addBookToLibrary(title, author, pages, read) {
   const id = crypto.randomUUID();
   const book = new Book(title, author, pages, read, id);
+  console.log(book.info());
   myLibrary.push(book);
 }
 
