@@ -1,5 +1,21 @@
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+#library {
+  margin-top: 10%;
+}
+
 #library * {
     outline: 1px solid black;
     padding: 6px;
     text-align: center;
   }
+
+dialog {
+  text-align: center;
+}
