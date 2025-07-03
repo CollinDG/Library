@@ -15,6 +15,6 @@ A simple project built as part of [The Odin Project](https://www.theodinproject.
 
 ## Built With
 
-- HTML5
-- CSS3
-- JavaScript (ES6)
+- HTML
+- CSS
+- JavaScript
