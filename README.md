@@ -2,9 +2,7 @@
 
 A simple project built as part of [The Odin Project](https://www.theodinproject.com/) curriculum to practice **JavaScript**, **DOM manipulation**, and using the `<dialog>` element for form-based input.
 
-## Live Preview
-
-[View Here](https://collindg.github.io/Library)
+[Live Preview](https://collindg.github.io/Library)
 
 ## Features
 
