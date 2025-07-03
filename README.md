@@ -1,6 +1,6 @@
 # Library App
 
-A simple project built as part of [The Odin Project](https://www.theodinproject.com/) curriculum to practice **JavaScript**, **DOM manipulation**, and using the `<dialog>` element for form-based input.
+A simple project built to practice **JavaScript**, **DOM manipulation**, and using the `<dialog>` element for form-based input.
 
 [Live Preview](https://collindg.github.io/Library)
 
