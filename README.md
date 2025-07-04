@@ -6,12 +6,12 @@ A simple project built to practice **JavaScript**, **DOM manipulation**, and usi
 
 ## Features
 
-- Add books with title, author, number of pages, and read status.
-- Display all books in a dynamic table.
-- Remove books from the library.
-- Toggle read status individually.
-- Data is stored in an array of **Book** class instances.
-- Modal form powered by the `<dialog>` HTML element.
+- Add books with title, author, number of pages, and read status
+- Display all books in a dynamic table
+- Remove books from the library
+- Toggle read status individually
+- Data is stored in an array of **Book** class instances
+- Modal form powered by the `<dialog>` HTML element
 
 ## Built With
 
